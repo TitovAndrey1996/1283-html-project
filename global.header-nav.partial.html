@@ -1,13 +1,15 @@
-<nav>
-    <div style="background-color: 040304">
-        <a href="./"><img width="146" src="./img/global/logo-prizma.svg" alt="Prizma logo"></a>
+<nav class="header__nav">
+    <div class="header__logo-container" style="background-color: 040304">
+        <a class="header__logo-link" href="./">
+            <img class="header__logo-image" width="146" src="./img/global/logo-prizma.svg" alt="Prizma logo">
+        </a>
     </div>
-    <ul>
-        <li>
-            <a href="about.html">About Us</a>
+    <ul class="header__menu menu">
+        <li class="menu__item">
+            <a href="about.html" class="menu__item-link menu__item-link--active">About Us</a>
         </li>
-        <li>
-            <a data-proofer-ignore href="index.html#areas">Design</a>
+        <li class="menu__item">
+            <a data-proofer-ignore href="index.html#areas" class="menu__item-link>Design"></a>
         </li>
     </ul>
 </nav>
@@ -16,3 +18,28 @@
 <!-- <nav class="header__nav">
   
 </nav> -->
+
+
+<form action="#" class="form-header">
+    <fieldset class="form-header__fieldset">
+        <legend class="form__header__legend">
+            Lorem ipsum dolor sit amet.
+        </legend>
+        <div class="form-header__label_container">
+            <label for="cat"><input id="cat" value="cat" type="checkbox" checked name="animal">Cat</label>
+            <label for="dog"><input id="dog" value="dog" type="checkbox" name="animal">Dog</label>
+            <label for="mouse"><input id="mouse" value="mouse" type="checkbox" name="animal">Mouse</label>
+        </div>
+    </fieldset>
+    <fieldset class="form-header__fieldset">
+        <legend class="form-header__legend">
+            Lorem ipsum dolor sit amet.
+        </legend>
+        <div class="form-header__label_container">
+            <label for="house"><input id="house" value="house" type="radio" checked name="house-car">House</label>
+            <label for="car"><input id="car" value="car" type="radio" name="house-car">Car</label>
+        </div>
+    </fieldset>
+    <input class="form-header__input-text" type="text" name="animalurl" placeholder="animal URL" required>
+    <button class="form-header__input-button button" type="submit"">Submit</button>
+</form>
